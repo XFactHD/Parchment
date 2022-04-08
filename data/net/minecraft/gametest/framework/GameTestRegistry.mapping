@@ -22,9 +22,13 @@ CLASS net/minecraft/gametest/framework/GameTestRegistry
 		ARG 0 testClass
 	METHOD register (Ljava/lang/reflect/Method;)V
 		ARG 0 testMethod
+	METHOD register (Ljava/lang/reflect/Method;Ljava/util/Set;)V
+		ARG 0 testMethod
 	METHOD registerBatchFunction (Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/util/function/Function;Ljava/util/Map;)V
 		ARG 0 testMethod
 		ARG 1 annotationType
+		ARG 2 functionName
+		ARG 3 batchMap
 	METHOD rememberFailedTest (Lnet/minecraft/gametest/framework/TestFunction;)V
 		ARG 0 testFunction
 	METHOD turnMethodIntoConsumer (Ljava/lang/reflect/Method;)Ljava/util/function/Consumer;

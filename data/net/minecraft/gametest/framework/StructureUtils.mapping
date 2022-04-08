@@ -1,12 +1,19 @@
 CLASS net/minecraft/gametest/framework/StructureUtils
 	METHOD addCommandBlockAndButtonToStartTest (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/Rotation;Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 0 sbPos
+			COMMENT Position of the Structure Block
+		ARG 1 cbOffset
+			COMMENT Offset of the Command Block from the Structure Block
 		ARG 2 rotation
+			COMMENT Rotation of the structure
 		ARG 3 serverLevel
 	METHOD clearBlock (ILnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 0 maxY
 		ARG 1 pos
 		ARG 2 serverLevel
 	METHOD clearSpaceForStructure (Lnet/minecraft/world/level/levelgen/structure/BoundingBox;ILnet/minecraft/server/level/ServerLevel;)V
 		ARG 0 boundingBox
+		ARG 1 maxY
 		ARG 2 serverLevel
 	METHOD createNewEmptyStructureBlock (Ljava/lang/String;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Vec3i;Lnet/minecraft/world/level/block/Rotation;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 0 structureName
@@ -19,18 +26,22 @@ CLASS net/minecraft/gametest/framework/StructureUtils
 		ARG 1 pos
 		ARG 2 rotation
 		ARG 3 serverLevel
+		ARG 4 checkSize
 	METHOD doesStructureContain (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;)Z
 		ARG 0 structureBlockPos
 		ARG 1 posToTest
 		ARG 2 serverLevel
 	METHOD findNearestStructureBlock (Lnet/minecraft/core/BlockPos;ILnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/core/BlockPos;
 		ARG 0 pos
+		ARG 1 radius
 		ARG 2 serverLevel
 	METHOD findStructureBlockContainingPos (Lnet/minecraft/core/BlockPos;ILnet/minecraft/server/level/ServerLevel;)Ljava/util/Optional;
 		ARG 0 pos
+		ARG 1 radius
 		ARG 2 serverLevel
 	METHOD findStructureBlocks (Lnet/minecraft/core/BlockPos;ILnet/minecraft/server/level/ServerLevel;)Ljava/util/Collection;
 		ARG 0 pos
+		ARG 1 radius
 		ARG 2 serverLevel
 	METHOD forceLoadChunks (Lnet/minecraft/core/BlockPos;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 0 pos
@@ -67,5 +78,6 @@ CLASS net/minecraft/gametest/framework/StructureUtils
 		ARG 1 pos
 		ARG 2 rotation
 		ARG 4 serverLevel
+		ARG 5 checkSize
 	METHOD tryLoadStructure (Ljava/nio/file/Path;)Lnet/minecraft/nbt/CompoundTag;
 		ARG 0 pathToStructure

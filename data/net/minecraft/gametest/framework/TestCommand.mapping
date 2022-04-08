@@ -16,6 +16,54 @@ CLASS net/minecraft/gametest/framework/TestCommand
 	METHOD importTestStructure (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;)I
 		ARG 0 source
 		ARG 1 structurePath
+	METHOD lambda$register$0 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$1 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$10 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$11 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$12 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$13 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$14 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$15 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$16 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$17 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$18 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$19 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$2 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$20 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$21 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$22 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$23 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$3 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$4 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$5 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$6 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$7 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$8 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD lambda$register$9 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
 	METHOD lambda$runAllNearbyTests$24 (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/gametest/framework/MultipleTestTracker;Lnet/minecraft/core/BlockPos;)V
 		ARG 2 pos
 	METHOD lambda$runTests$25 (Lnet/minecraft/gametest/framework/GameTestInfo;)V
@@ -57,6 +105,7 @@ CLASS net/minecraft/gametest/framework/TestCommand
 		ARG 1 serverLevel
 	METHOD runTests (Lnet/minecraft/commands/CommandSourceStack;Ljava/util/Collection;II)V
 		ARG 0 source
+		ARG 1 functions
 		ARG 2 rotationSteps
 		ARG 3 testsPerRow
 	METHOD say (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;)V
@@ -68,6 +117,7 @@ CLASS net/minecraft/gametest/framework/TestCommand
 		ARG 2 formatting
 	METHOD showPos (Lnet/minecraft/commands/CommandSourceStack;Ljava/lang/String;)I
 		ARG 0 source
+		ARG 1 varName
 	METHOD showTestSummaryIfAllDone (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/gametest/framework/MultipleTestTracker;)V
 		ARG 0 serverLevel
 		ARG 1 tracker

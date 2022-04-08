@@ -3,6 +3,7 @@ CLASS net/minecraft/gametest/framework/GameTestServer
 		ARG 1 serverThreaed
 		ARG 2 storageSource
 		ARG 3 packRepository
+		ARG 4 worldStem
 		ARG 5 testBatchs
 		ARG 6 spawnPos
 	METHOD create (Ljava/lang/Thread;Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/packs/repository/PackRepository;Ljava/util/Collection;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/gametest/framework/GameTestServer;
@@ -11,6 +12,9 @@ CLASS net/minecraft/gametest/framework/GameTestServer
 		ARG 2 packRepository
 		ARG 3 testBatches
 		ARG 4 spawnPos
+	METHOD lambda$create$2 (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/world/level/DataPackConfig;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 resourceManager
+		ARG 1 datapacks
 	METHOD lambda$static$0 (Lnet/minecraft/world/level/GameRules;)V
 		ARG 0 gameRules
 	METHOD startTests (Lnet/minecraft/server/level/ServerLevel;)V
